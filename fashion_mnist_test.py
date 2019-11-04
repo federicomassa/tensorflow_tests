@@ -40,6 +40,9 @@ model.compile(optimizer='adam',
     metrics=['accuracy']
 )
 
+print("Shape:", train_images.shape, train_labels.shape)
+print("Summary:", model.summary())
+
 model.fit(train_images, train_labels, epochs=10)
 
 # Test
